@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: 2px solid $border-color;
+  margin-bottom: 50px;
+
+  nav {
+    @include double-button(80px);
+  }
+}

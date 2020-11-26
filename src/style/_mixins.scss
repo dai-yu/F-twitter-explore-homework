@@ -2,3 +2,20 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin double-button($button-width) {
+  .login {
+    @include button-style($body-bg, $primary-color, $button-width);
+  }
+  .sign-up {
+    @include button-style($primary-color, white, $button-width);
+  }
+}
+
+@mixin button-style($bg-color, $font-color, $button-width) {
+  background-color: $bg-color;
+  color: $font-color;
+  width: $button-width;
+  border: 1px solid $primary-color;
+  border-radius: 80px;
+}
